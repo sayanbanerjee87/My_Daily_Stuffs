@@ -1,0 +1,80 @@
+
+.pageHeader{
+  background: #4EB114;
+  height: 65px;
+  width: 100%;
+  border-radius: 5px;
+}
+.headerContainer{
+  left: 10px;
+  position: relative;
+  top: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: SANS-SERIF;
+}
+.bomNavBar{
+  position: relative;
+  top: 26px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  background-color: #4EB114!important;
+}
+.uiGridContainer{
+  position: relative;
+  top: 50px;
+}
+
+.textAreaContainer{
+	width: 99%;
+	position: relative;
+  left: 1%;
+  min-height: 150px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+#jsonContainer{
+  width: 98%;
+  height: 145px;
+  border-radius: 5px;
+  border-color: #4EB114;
+  border-width: 3px;
+}
+
+#submitJson{
+  position: relative;
+  left: 45%;
+}
+
+.ui-grid-top-panel {
+  background:  #4EB114;
+}
+
+.ui-grid-top-panel
+{
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.ui-grid-filter-input{
+  color: #000000 !important;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: normal !important;
+}
+
+
+
+.addReferenceContainer{
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  overflow-x: hidden;
+}
+
+.submitButtonContainer{
+  left: 43%;
+  position: relative;
+}

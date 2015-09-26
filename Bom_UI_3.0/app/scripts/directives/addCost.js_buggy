@@ -1,0 +1,22 @@
+/**
+ * Created by SESA379886 on 6/19/2015.
+ */
+
+angular.module("addCostToBom",[]).directive("seAddLabourCost", function(){
+  return{
+    restrict  : 'A',
+    scope : {
+      triggerAddEvent : '=',
+      ref : '=',
+      desc : '=',
+      qty : '=',
+      dscnt : '=',
+      untpr : '='
+
+    },
+    templateUrl : 'addLabourCost.html',
+    link : function(scope, element, attrs){
+      console.log("Link func!!");
+    }
+  }
+})

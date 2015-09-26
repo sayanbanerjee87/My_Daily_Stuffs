@@ -1,0 +1,46 @@
+
+<form class = "form-horizontal" ng-submit="triggerAddEvent()" name = "bom_add_form" class = "col-sm-11">
+  <div class = "form-group">
+      <div class="col-sm-2">
+        <label for = "firstInputElem" class = "col-xs-2">Cubicle</label>
+      </div>
+      <div class="col-sm-8">
+        <input type="text" ng-model = "ref" class="form-control" id = "firstInputElem" data-id="cubicle"/>
+      </div>
+  </div>
+  <div class="form-group">
+      <div class="col-sm-2">
+        <label for="secondInputElem" class = "col-xs-2">Description</label>
+      </div>
+      <div class="col-sm-8">
+        <input type="text" ng-model = "desc" class="form-control" id = "secondInputElem" data-id="description"/>
+      </div>
+  </div>
+  <div class="form-group">
+      <div class="col-sm-2">
+        <label for="thirdInputElem" class = "col-xs-2">Quantity</label>
+      </div>
+      <div class="col-sm-8">
+       <input type="text" ng-model = "qty" class="form-control" id = "thirdInputElem" data-id="quantity"/>
+      </div>
+  </div>
+  <div class="form-group">
+      <div class="col-sm-2">
+        <label for="fourthInputElem" class = "col-xs-2">Material</label>
+      </div>
+      <div class="col-sm-8">
+       <input type="text" ng-model = "dscnt" class="form-control" id = "fourthInputElem" data-id="material"/>
+      </div>
+  </div>
+  <div class="form-group">
+      <div class="col-sm-2">
+        <label for="fifthInputElem" class = "col-xs-2">Part</label>
+      </div>
+      <div class="col-sm-8">
+       <input type="text" ng-model = "untpr" class="form-control" id = "fifthInputElem" data-id="part"/>
+      </div>
+  </div>
+  <div class = "submitButtonContainer form-group">
+    <button class="btn btn-success" type="submit">Add To The BOM</button>
+  </div>
+</form>

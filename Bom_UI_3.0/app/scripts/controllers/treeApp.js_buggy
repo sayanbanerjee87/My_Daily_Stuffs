@@ -1,0 +1,38 @@
+var module = angular.module('app', ['bomGridApp','addCostToBom']);
+
+module.controller('gridController', ['$scope', function($scope) {
+	$scope.gridData = newJson;
+
+    var textContent = angular.element(jsonContainer);
+        textContent.val(JSON.stringify(newJson));
+        $scope.bomConfigOption = {
+			"uiGridReq" : true,
+			"enableCellEditOnFocus" : true,
+			"enableFiltering" : true,
+			"enableGridMenu" : true,
+			"enableSelectAll" : true,
+			"exporterMenuCsv" : true,
+			"exporterMenuPdf" : false,
+			"exporterCsvFilename" : 'BomGrid.csv',
+		};
+	$scope.exportName = "SampleCSV";
+
+     $scope.submitJson = function(){
+        elem = angular.element(jsonContainer).val();
+        jsonData = JSON.parse(elem);
+        $scope.gridData = jsonData;
+    }
+
+  $scope.addToProduct = function(){
+    var newElem = [],gridElem = {};
+    newElem.cubicle = $scope.cubicle;
+    newElem.description = $scope.description;
+    newElem.quantity = $scope.quantity;
+    newElem.material = $scope.material;
+    newElem.part = $scope.part;
+    angular.forEach($scope.gridData.header.columns, function(val, key){
+          gridElem.key = newElem.key ? newElem.key : "";
+    })
+    $scope.gridData.bom.push(gridElem);
+  }
+}]);
