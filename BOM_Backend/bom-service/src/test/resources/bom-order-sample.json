@@ -1,0 +1,76 @@
+{
+    "header": {
+        "columns": [{
+            "id": "reference",
+            "label": "Type d'appareil",
+            "type": "String",
+            "hasTotal": false
+        }, {
+            "id": "description",
+            "label": "Désignation",
+            "type": "String",
+            "hasTotal": false
+        }, {
+            "id": "quantity",
+            "label": "Quantité",
+            "type": "Number",
+            "hasTotal": false
+        }],
+        "groups": [{
+            "tag": "cubicle",
+            "displayColumnHeaders": true,
+            "displayTotal": false
+        }, {
+            "tag": "fu",
+            "displayColumnHeaders": false,
+            "displayTotal": false
+        }],
+        "currency": "€",
+        "displayTotal": "false",
+        "language": "fr"
+    },
+    "bom": {
+        "currencyCode": "EUR",
+        "content": [{
+            "product": {
+                "reference": "NW20",
+                "description": "Maître Pacte d'arrivée",
+                "quantity": 1
+            },
+            "tags": {
+                "cubicle": "CUB-A",
+                "fu": "QA-1"
+            }
+        }, {
+            "product": {
+                "reference": "NW16",
+                "description": "Maître Pacte de départ",
+                "quantity": 1
+            },
+            "tags": {
+                "cubicle": "CUB-A",
+                "fu": "QA-2"
+            }
+        }, {
+            "product": {
+                "reference": "NSX100",
+                "description": "Compact tassé",
+                "quantity": 1
+            },
+            "tags": {
+                "cubicle": "CUB-B",
+                "fu": "QA-3"
+            }
+        }, {
+            "product": {
+                "reference": "SMRT-BDL",
+                "description": "Bidule qui smartifie",
+                "quantity": 1
+            },
+            "tags": {
+                "cubicle": "CUB-B",
+                "fu": "QA-3"
+            }
+        }]
+    }
+}

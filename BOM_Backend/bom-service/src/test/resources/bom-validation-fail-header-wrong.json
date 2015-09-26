@@ -1,0 +1,106 @@
+{
+    "header": {
+        "columns": [
+            {
+                "label": "Reference",
+                "type": "String"
+            },
+            {
+                "id": "quantity",
+                "type": "Number"
+            },
+            {
+                "id": "discount",
+                "label": "Discount",
+                "type": "Percentage"
+            },
+            {
+                "id": "unitPrice",
+                "label": "Unit Price"
+            },
+            {
+                "id": "NET_PRICE",
+                "label": "Net Price",
+                "type": "Price",
+                "hasTotal": true
+            }
+        ],
+        "groups": [
+            {
+                "displayColumnHeaders": true
+            },
+            {
+                "tag": "type",
+                "displayTotal": "false",
+                "displayColumnHeaders": false
+            }
+        ],
+        "displayTotal": "true"
+    },
+    "bom": {
+        "currencyCode": "EUR",
+        "language": "fr",
+        "content": [
+            {
+                "product": {
+                    "reference": "PRA13814",
+                    "quantity": "1",
+                    "discount": "0.20",
+                    "description": "PRA13814 extra ...",
+                    "dataSheetUrl": "http://BSL/PRA13814.pdf",
+                    "pictureUrl": "http://BSL/PRA13814.png",
+                    "extra1": "value1",
+                    "products": [
+                        {
+                            "reference": "PRA13814",
+                            "quantity": "2",
+                            "unitPrice": "225"
+                        }
+                    ]
+                },
+                "tags": {
+                    "type": "enclosure",
+                    "switchboard": "1"
+                }
+            },
+            {
+                "product": {
+                    "reference": "PRA15424",
+                    "quantity": "1",
+                    "unitPrice": "45",
+                    "discount": "0.20"
+                },
+                "tags": {
+                    "type": "door",
+                    "switchboard": "1"
+                }
+            },
+            {
+                "product": {
+                    "reference": "A9R60225",
+                    "quantity": "4",
+                    "unitPrice": "20",
+                    "discount": "0.10"
+                },
+                "tags": {
+                    "type": "multi9",
+                    "position": "rail1",
+                    "switchboard": "2"
+                }
+            },
+            {
+                "product": {
+                    "reference": "A9R60225",
+                    "quantity": "4",
+                    "unitPrice": "20",
+                    "discount": "0.10"
+                },
+                "tags": {
+                    "type": "multi9",
+                    "position": "rail2",
+                    "switchboard": "1"
+                }
+            }
+        ]
+    }
+}

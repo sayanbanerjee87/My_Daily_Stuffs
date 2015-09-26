@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ElectricalProject formatVersion="0.28" productRangeValuesVersion="0.16" commercialTaxonomyVersion="0.24" electricalTaxonomyVersion="0.18" mechanicalTaxonomyVersion="0.1" xmlns:ns2="http://www.schneider-electric.com/ecoreal/ad" xmlns="http://www.schneider-electric.com/electrical-distribution/exchange-format" xmlns:ns4="http://www.schneider-electric.com/electrical-distribution/exchange-format/electrical-taxonomy" xmlns:ns3="http://www.schneider-electric.com/electrical-distribution/exchange-format/commercial-taxonomy" xmlns:ns5="http://www.schneider-electric.com/electrical-distribution/exchange-format/mechanical-taxonomy">
+  <Description/>
+  <Products>
+    <PartSet>
+      <Part id="PP004">
+        <Name>LV429387</Name>
+        <Brand>Schneider Electric</Brand>
+        <Code>LV429387</Code>
+        <Revision>0</Revision>
+        <PackSize>1</PackSize>
+      </Part>
+      <Part id="PP001">
+        <Name>dummy</Name>
+        <Brand>Schneider Electric</Brand>
+        <Code></Code>
+        <Revision>0</Revision>
+        <PackSize>1</PackSize>
+      </Part>
+    </PartSet>
+    <ProductSet>
+      <Product id="PG1">
+        <Name></Name>
+        <Seed Name="KB_GCR_NSX100_630" Type="IPC" GroupId="" ItemId="KB_GCR_NSX100_630"/>
+        <Content>
+          <Characteristics>
+          </Characteristics>
+          <Children/>
+          <Extensions/>
+        </Content>
+        <SelectedPartAssembly>
+          <Part id="PP001"/>
+          <Position></Position>
+          <Quantity>1</Quantity>
+          <Children>
+            <Assembly>
+              <Part/>
+              <Position></Position>
+              <Quantity>1</Quantity>
+            </Assembly>
+            <Assembly>
+              <Part/>
+              <Position></Position>
+              <Quantity>1</Quantity>
+            </Assembly>
+            <Assembly>
+              <Part id="PP004"/>
+              <Position></Position>
+              <Quantity>1</Quantity>
+            </Assembly>
+          </Children>
+        </SelectedPartAssembly>
+      </Product>
+   </ProductSet>
+    <ProductList>
+      <Pack id="PK1" Descriptor="PG1">
+        <Instances>
+          <Instance id="PI1"/>
+        </Instances>
+      </Pack>
+    </ProductList>
+  </Products>
+ </ElectricalProject>

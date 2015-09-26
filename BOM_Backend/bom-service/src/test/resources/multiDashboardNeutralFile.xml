@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ElectricalProject
+        formatVersion="0.27"
+        productRangeValuesVersion="0.16"
+        commercialTaxonomyVersion="0.23"
+        electricalTaxonomyVersion="0.18"
+        mechanicalTaxonomyVersion="0.1"
+        xmlns="http://www.schneider-electric.com/electrical-distribution/exchange-format"
+        xmlns:mtaxo="http://www.schneider-electric.com/electrical-distribution/exchange-format/mechanical-taxonomy"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.schneider-electric.com/electrical-distribution/exchange-format/commercial-taxonomy NeutralFileNewXSD/CommercialTaxonomy.xsd
+                   http://www.schneider-electric.com/electrical-distribution/exchange-format/electrical-taxonomy NeutralFileNewXSD/ElectricalTaxonomy.xsd
+                   http://www.schneider-electric.com/electrical-distribution/exchange-format/mechanical-taxonomy NeutralFileNewXSD/MechanicalTaxonomy.xsd
+                    http://www.schneider-electric.com/electrical-distribution/exchange-format NeutralFileNewXSD/ElectricalProject.xsd">
+    <Description/>
+    <Contacts/>
+    <Products>
+        <PartSet>
+            <Part id="PP001">
+                <Name>Enclosure</Name>
+                <Brand>SE</Brand>
+                <Code>PRA10202</Code>
+            </Part>
+            <Part id="PP002">
+                <Name>Door</Name>
+                <Brand>SE</Brand>
+                <Code>PRA15213</Code>
+            </Part>
+            <Part id="PP003">
+                <Name>Multi9</Name>
+                <Brand>SE</Brand>
+                <Code>A9F74170</Code>
+            </Part>
+        </PartSet>
+        <ProductSet>
+            <Product id="PG001">
+                <Name>Enclosure</Name>
+                <Seed Name="" Type="" GroupId="" ItemId=""/>
+                <Content>
+                    <Characteristics></Characteristics>
+                </Content>
+                <SelectedPartAssembly>
+                    <Part id="PP001"/>
+                    <Position></Position>
+                    <Quantity>1</Quantity>
+                </SelectedPartAssembly>
+            </Product>
+            <Product id="PG002">
+                <Name>Door</Name>
+                <Seed Name="" Type="" GroupId="" ItemId=""/>
+                <Content>
+                    <Characteristics></Characteristics>
+                </Content>
+                <SelectedPartAssembly>
+                    <Part id="PP002"/>
+                    <Position></Position>
+                    <Quantity>1</Quantity>
+                </SelectedPartAssembly>
+            </Product>
+            <Product id="PG003">
+                <Name>Multi9</Name>
+                <Seed Name="" Type="" GroupId="" ItemId=""/>
+                <Content>
+                    <Characteristics></Characteristics>
+                </Content>
+                <SelectedPartAssembly>
+                    <Part id="PP003"/>
+                    <Position></Position>
+                    <Quantity>1</Quantity>
+                </SelectedPartAssembly>
+            </Product>
+        </ProductSet>
+        <ProductList>
+            <Pack id="PK001" Descriptor="PG001">
+			    <!-- enclosure -->
+                <Instances>
+                    <Instance id="PI001"/>
+                </Instances>
+				<Extensions>
+					<Extension>
+						<pace:BomTag xmlns:pace="http://bom.pace.schneider-electric.com" name="type" value="enclosure" />
+					</Extension>
+				</Extensions>
+            </Pack>
+            <Pack id="PK002" Descriptor="PG002">
+                <Instances>
+                    <Instance id="PI002"/>
+                </Instances>
+            </Pack>
+            <Pack id="PK003" Descriptor="PG003">
+                <Instances>
+                    <Instance id="PI003"/>
+                    <Instance id="PI004"/>
+                    <Instance id="PI005"/>
+                </Instances>
+            </Pack>
+        </ProductList>
+    </Products>
+    <Equipments>
+        <Equipment id="EQ001">
+            <Commercial ProductPacks="PK001">
+                <Properties>
+                    <Frequency>50</Frequency>
+                    <IK>01</IK>
+                    <Range/>
+                </Properties>
+            </Commercial>
+            <Mechanical MechanicalParts="MP001 MP002 MP003 MP004 MP005 MP011">
+                <Properties/>
+            </Mechanical>
+            <Properties>
+                <Name>Tableau</Name>
+            </Properties>
+        </Equipment>
+		<Equipment id="EQ002">
+            <Commercial ProductPacks="PK002 PK003">
+                <Properties>
+                    <Frequency>50</Frequency>
+                    <IK>01</IK>
+                    <Range/>
+                </Properties>
+            </Commercial>
+            <Mechanical MechanicalParts="MP006 MP007 MP008 MP009 MP010">
+                <Properties/>
+            </Mechanical>
+            <Properties>
+                <Name>Tableau</Name>
+            </Properties>
+        </Equipment>
+    </Equipments>
+    <Network>
+        <Components></Components>
+        <PowerConnections></PowerConnections>
+    </Network>
+    <Assembly>
+        <MechanicalPartDescriptors>
+            <MechanicalPartDescriptor id="MPD001" partReference="cspp132">
+                <!-- Frame / Cadre -->
+                <mtaxo:Frame>
+                </mtaxo:Frame>
+                <MountingZones>
+                    <MountingZone id="MPM001">
+                        <!-- Front plate support frame (CSP) -->
+                        <Description>FPSF Fixing point</Description>
+                        <Element>FrontPlateSupportFrame</Element>
+                        <Support>true</Support>
+                        <Shape>Point</Shape>
+                    </MountingZone>
+                    <MountingZone id="MPM002">
+                        <Description>Up rail</Description>
+                        <Element>DINRail</Element>
+                        <Support>true</Support>
+                        <Shape>Point</Shape>
+                    </MountingZone>
+                    <MountingZone id="MPM003">
+                        <Description>Down rail</Description>
+                        <Element>DINRail</Element>
+                        <Support>true</Support>
+                        <Shape>Point</Shape>
+                    </MountingZone>
+                </MountingZones>
+            </MechanicalPartDescriptor>
+            <MechanicalPartDescriptor id="MPD002" partReference="pnce131">
+                <!-- Plastron -->
+                <mtaxo:Plastron>
+                </mtaxo:Plastron>
+                <MountingZones>
+                    <MountingZone id="MPM004">
+                        <Description>CSP Fixing point</Description>
+                        <Element>FrontPlate</Element>
+                        <Support>false</Support>
+                        <Shape>Point</Shape>
+                    </MountingZone>
+                </MountingZones>
+            </MechanicalPartDescriptor>
+            <MechanicalPartDescriptor id="MPD003" partReference="cscs132">
+                <!-- Cadre support Plastron -->
+                <mtaxo:Support>
+                    <mtaxo:ModuleHeight>2</mtaxo:ModuleHeight>
+                </mtaxo:Support>
+                <MountingZones>
+                    <MountingZone id="MPM005">
+                        <Description>Frame Fixing point</Description>
+                        <Element>FrontPlateSupportFrame</Element>
+                        <Support>false</Support>
+                        <Shape>Point</Shape>
+                    </MountingZone>
+                    <MountingZone id="MPM006">
+                        <Description>Door</Description>
+                        <Element>Door</Element>
+                        <Support>true</Support>
+                        <Shape>Point</Shape>
+                    </MountingZone>
+                    <MountingZone id="MPM007">
+                        <Description>Plastron</Description>
+                        <Element>FrontPlate</Element>
+                        <Support>true</Support>
+                        <Shape>Point</Shape>
+                    </MountingZone>
+                </MountingZones>
+            </MechanicalPartDescriptor>
+            <MechanicalPartDescriptor id="MPD004" partReference="pra13s-e-rail">
+                <!-- Rail -->
+                <mtaxo:Rail>
+                    <mtaxo:Type>DIN</mtaxo:Type>
+                    <mtaxo:Length unit="mm">100</mtaxo:Length>
+                    <mtaxo:Step unit="mm">10</mtaxo:Step>
+                    <mtaxo:NBModules>10</mtaxo:NBModules>
+                </mtaxo:Rail>
+                <MountingZones>
+                    <MountingZone id="MPM008">
+                        <Description>Frame Fixing point</Description>
+                        <Element>DINRail</Element>
+                        <Support>false</Support>
+                        <Shape>Point</Shape>
+                    </MountingZone>
+                    <MountingZone id="MPM009">
+                        <Description>DIN</Description>
+                        <Element>DIN</Element>
+                        <Support>true</Support>
+                        <Shape>Line</Shape>
+                    </MountingZone>
+                </MountingZones>
+            </MechanicalPartDescriptor>
+            <MechanicalPartDescriptor id="MPD005" partReference="pra13s-e-rail">
+                <!-- Rail -->
+                <mtaxo:Rail>
+                    <mtaxo:Type>DIN</mtaxo:Type>
+                    <mtaxo:Length unit="mm">100</mtaxo:Length>
+                    <mtaxo:Step unit="mm">10</mtaxo:Step>
+                    <mtaxo:NBModules>10</mtaxo:NBModules>
+                </mtaxo:Rail>
+                <MountingZones>
+                    <MountingZone id="MPM012">
+                        <Description>Frame Fixing point</Description>
+                        <Element>DINRail</Element>
+                        <Support>false</Support>
+                        <Shape>Point</Shape>
+                    </MountingZone>
+                    <MountingZone id="MPM013">
+                        <Description>DIN</Description>
+                        <Element>DIN</Element>
+                        <Support>true</Support>
+                        <Shape>Line</Shape>
+                    </MountingZone>
+                </MountingZones>
+            </MechanicalPartDescriptor>
+            <MechanicalPartDescriptor id="MPD006" partReference="sb109912">
+                <!-- Door -->
+                <mtaxo:Door>
+                </mtaxo:Door>
+                <MountingZones>
+                    <MountingZone id="MPM010">
+                        <Description>CSP Fixing point</Description>
+                        <Element>Door</Element>
+                        <Support>false</Support>
+                        <Shape>Point</Shape>
+                    </MountingZone>
+                </MountingZones>
+            </MechanicalPartDescriptor>
+            <MechanicalPartDescriptor id="MPD007" partReference="b100442">
+                <!-- MULTI9 -->
+                <mtaxo:Device>
+                </mtaxo:Device>
+                <MountingZones>
+                    <MountingZone id="MPM011">
+                        <Description>Fixing point</Description>
+                        <Element>DIN</Element>
+                        <Support>false</Support>
+                        <Shape>Point</Shape>
+                    </MountingZone>
+                </MountingZones>
+            </MechanicalPartDescriptor>
+            <MechanicalPartDescriptor id="MPD008" partReference="sb108817">
+                <!-- Distribution -->
+                <mtaxo:Distribution />
+            </MechanicalPartDescriptor>
+        </MechanicalPartDescriptors>
+        <MechanicalParts>
+            <MechanicalPart id="MP001" PartDescriptor="MPD001" ProductPart="PP001" ProductInstance="PI001">
+                <pace:CompositionAttribute xmlns:pace="http://composer3d.pace.schneider-electric.com" name="reference" value="PRA10202" />
+                <pace:CompositionAttribute xmlns:pace="http://composer3d.pace.schneider-electric.com" name="layer" value="enclosure" />
+            </MechanicalPart>
+            <MechanicalPart id="MP002" PartDescriptor="MPD002" ProductPart="PP001" ProductInstance="PI001"/>
+            <MechanicalPart id="MP003" PartDescriptor="MPD003" ProductPart="PP001" ProductInstance="PI001"/>
+            <MechanicalPart id="MP004" PartDescriptor="MPD004" ProductPart="PP001" ProductInstance="PI001"/>
+            <MechanicalPart id="MP005" PartDescriptor="MPD005" ProductPart="PP001" ProductInstance="PI001"/>
+            <!-- todo merge MPD005 with MPD004 -->
+            <MechanicalPart id="MP006" PartDescriptor="MPD006" ProductPart="PP002" ProductInstance="PI002"/>
+            <MechanicalPart id="MP007" PartDescriptor="MPD007" ProductPart="PP003" ProductInstance="PI001"/>
+            <MechanicalPart id="MP008" PartDescriptor="MPD007" ProductPart="PP003" ProductInstance="PI001"/>
+            <MechanicalPart id="MP009" PartDescriptor="MPD007" ProductPart="PP003" ProductInstance="PI001"/>
+            <MechanicalPart id="MP010" PartDescriptor="MPD007" ProductPart="PP003" ProductInstance="PI001"/>
+            <MechanicalPart id="MP011" PartDescriptor="MPD008" ProductPart="PP001" ProductInstance="PI001">
+                <Length>300</Length>
+            </MechanicalPart>
+        </MechanicalParts>
+
+        <Arrangements>
+            <!-- Support on Frame -->
+            <Arrangement>
+                <Part PartId="MP003">
+                    <LogicalPosition ZoneId="MPM005"/>
+                    <GeometricalPosition X="0" Y="0" Z="0"/>
+                </Part>
+                <OnPart PartId="MP001">
+                    <LogicalPosition ZoneId="MPM001"/>
+                    <GeometricalPosition X="0" Y="0" Z="78.5"/>
+                </OnPart>
+            </Arrangement>
+            <!-- Plastron on support -->
+            <Arrangement>
+                <Part PartId="MP002">
+                    <LogicalPosition ZoneId="MPM004"/>
+                    <GeometricalPosition X="7.4" Y="0" Z="26"/>
+                </Part>
+                <OnPart PartId="MP003">
+                    <LogicalPosition ZoneId="MPM007"/>
+                    <GeometricalPosition X="21.1" Y="75" Z="36.9"/>
+                </OnPart>
+            </Arrangement>
+            <!-- Rail 1 on Frame -->
+            <Arrangement>
+                <Part PartId="MP004">
+                    <LogicalPosition ZoneId="MPM008"/>
+                    <GeometricalPosition X="4" Y="17.5" Z="0"/>
+                </Part>
+                <OnPart PartId="MP001">
+                    <LogicalPosition ZoneId="MPM002"/>
+                    <GeometricalPosition X="45.5" Y="137.5" Z="42"/>
+                </OnPart>
+            </Arrangement>
+            <!-- Rail 2 on Frame -->
+            <Arrangement>
+                <Part PartId="MP005">
+                    <LogicalPosition ZoneId="MPM012"/>
+                    <GeometricalPosition X="4" Y="17.5" Z="0"/>
+                </Part>
+                <OnPart PartId="MP001">
+                    <LogicalPosition ZoneId="MPM003"/>
+                    <GeometricalPosition X="45.5" Y="312.5" Z="42"/>
+                </OnPart>
+            </Arrangement>
+            <!-- Door on support -->
+            <Arrangement>
+                <Part PartId="MP006">
+                    <LogicalPosition ZoneId="MPM010"/>
+                    <GeometricalPosition X="19.50" Y="17.5" Z="-36.5"/>
+                </Part>
+                <OnPart PartId="MP001">
+                    <LogicalPosition ZoneId="MPM006"/>
+                    <GeometricalPosition X="20" Y="20" Z="78.5"/>
+                </OnPart>
+            </Arrangement>
+            <!-- Multi9 on rail 1 -->
+            <!-- 3rd slot on the rail -->
+            <Arrangement>
+                <Part PartId="MP007">
+                    <LogicalPosition ZoneId="MPM011"/>
+                    <GeometricalPosition X="0" Y="60.9" Z="5.50"/>
+                </Part>
+                <OnPart PartId="MP004">
+                    <LogicalPosition ZoneId="MPM009">
+                        <Linear pos="27"/>
+                    </LogicalPosition>
+                    <GeometricalPosition X="54.5" Y="35.05" Z="7.5"/>
+                </OnPart>
+            </Arrangement>
+            <!-- Multi9 on rail 1 -->
+            <!-- 2nd slot on the rail -->
+            <Arrangement>
+                <Part PartId="MP008">
+                    <LogicalPosition ZoneId="MPM011"/>
+                    <GeometricalPosition X="0" Y="60.9" Z="5.50"/>
+                </Part>
+                <OnPart PartId="MP004">
+                    <LogicalPosition ZoneId="MPM009">
+                        <Linear pos="18"/>
+                    </LogicalPosition>
+                    <GeometricalPosition X="36.5" Y="35.05" Z="7.5"/>
+                </OnPart>
+            </Arrangement>
+            <!-- Multi9 on rail 1 -->
+            <!-- 1st slot on the rail -->
+            <Arrangement>
+                <Part PartId="MP009">
+                    <LogicalPosition ZoneId="MPM011"/>
+                    <GeometricalPosition X="0" Y="60.9" Z="5.50"/>
+                </Part>
+                <OnPart PartId="MP004">
+                    <LogicalPosition ZoneId="MPM009">
+                        <Linear pos="9"/>
+                    </LogicalPosition>
+                    <GeometricalPosition X="18.5" Y="35.05" Z="7.5"/>
+                </OnPart>
+            </Arrangement>
+
+            <!-- Multi9 on rail 2 -->
+            <!-- 1st slot on the rail -->
+            <Arrangement>
+                <Part PartId="MP010">
+                    <LogicalPosition ZoneId="MPM011"/>
+                    <GeometricalPosition X="0" Y="60.9" Z="5.50"/>
+                </Part>
+                <OnPart PartId="MP005">
+                    <LogicalPosition ZoneId="MPM013">
+                        <Linear pos="9"/>
+                        <!-- <Surface x="12" y="42"/> -->
+                        <!--<Relative pos="top"/>-->
+                    </LogicalPosition>
+                    <GeometricalPosition X="18.5" Y="35.05" Z="7.5"/>
+                </OnPart>
+            </Arrangement>
+            <!-- Distribution on Frame -->
+            <Arrangement>
+                <Part PartId="MP011">
+                    <GeometricalPosition X="0" Y="0" Z="0"/>
+                </Part>
+                <OnPart PartId="MP001">
+                    <LogicalPosition ZoneId="MPM003"/>
+                    <GeometricalPosition X="145.5" Y="0" Z="0"/>
+                </OnPart>
+            </Arrangement>
+        </Arrangements>
+    </Assembly>
+</ElectricalProject>

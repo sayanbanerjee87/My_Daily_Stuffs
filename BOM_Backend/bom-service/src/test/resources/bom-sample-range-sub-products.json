@@ -1,0 +1,195 @@
+{
+    "header": {
+      "columns": [
+        {
+          "id": "reference",
+          "label": "Reference",
+          "type": "String"
+        },
+        {
+          "id": "quantity",
+          "label": "Quantity",
+          "type": "Number"
+        },
+        {
+          "id": "discount",
+          "label": "Discount",
+          "type": "Percentage"
+        },
+        {
+          "id": "unitPrice",
+          "label": "Unit price",
+          "type": "Price"
+        },
+        {
+          "id": "NET_PRICE",
+          "label": "Price",
+          "type": "Price",
+          "hasTotal": true
+        }
+      ],
+      "groups": [
+        {
+          "tag": "switchboard",
+          "displayColumnHeaders": "false"
+        },
+        {
+          "tag": "type",
+          "displayTotal": "false"
+        }
+      ],
+      "currency": "€",
+      "displayTotal": "true",
+      "language": "en-GB"
+    },
+    "bom": {
+      "currencyCode": "RUB",
+      "language": "ru-RU",
+      "content": [
+        {
+          "product": {
+            "reference": "LV431395",
+            "products": [
+              {
+                "reference": "LV431395",
+                "quantity": 1,
+                "unitPrice": 22340,
+                "discount": 0
+              },
+              {
+                "reference": "LV431480",
+                "quantity": 1,
+                "unitPrice": 1143.02001953125,
+                "discount": 0
+              }
+            ]
+          },
+          "tags": {
+            "type": "",
+            "switchboard": "Switchboard content"
+          }
+        },
+        {
+          "product": {
+            "reference": "A9F73270",
+            "products": [
+              {
+                "reference": "A9F73270",
+                "quantity": 2,
+                "unitPrice": 4438.75,
+                "discount": 0
+              }
+            ]
+          },
+          "tags": {
+            "type": "",
+            "switchboard": "Switchboard content"
+          }
+        },
+        {
+          "product": {
+            "reference": "A9F73170",
+            "products": [
+              {
+                "reference": "A9F73170",
+                "quantity": 5,
+                "unitPrice": 2216.32,
+                "discount": 0
+              }
+            ]
+          },
+          "tags": {
+            "type": "",
+            "switchboard": "Switchboard content"
+          }
+        },
+        {
+          "product": {
+            "reference": "A9R20216",
+            "products": [
+              {
+                "reference": "A9R20216",
+                "quantity": 10,
+                "unitPrice": 3286.85,
+                "discount": 0
+              }
+            ]
+          },
+          "tags": {
+            "type": "",
+            "switchboard": "Switchboard content"
+          }
+        },
+        {
+          "product": {
+            "reference": "08105",
+            "products": [
+              {
+                "reference": "08105",
+                "quantity": 1,
+                "unitPrice": 325.32000732421875,
+                "discount": 0
+              }
+            ]
+          },
+          "tags": {
+            "type": "",
+            "switchboard": "Enclosure"
+          }
+        },
+        {
+          "product": {
+            "reference": "03030",
+            "products": [
+              {
+                "reference": "03030",
+                "quantity": 1,
+                "unitPrice": 29.260000228881836,
+                "discount": 0
+              },
+              {
+                "reference": "03801",
+                "quantity": 1,
+                "unitPrice": 13.430000305175781,
+                "discount": 0
+              },
+              {
+                "reference": "03232",
+                "quantity": 1,
+                "unitPrice": 26.709999084472656,
+                "discount": 0
+              },
+              {
+                "reference": "04066",
+                "quantity": 1,
+                "unitPrice": 96.75,
+                "discount": 0
+              },
+              {
+                "reference": "03001",
+                "quantity": 2,
+                "unitPrice": 19.040000915527344,
+                "discount": 0
+              },
+              {
+                "reference": "03204",
+                "quantity": 2,
+                "unitPrice": 24.360000610351562,
+                "discount": 0
+              },
+              {
+                "reference": "03802",
+                "quantity": 1,
+                "unitPrice": 17.049999237060547,
+                "discount": 0
+              }
+            ]
+          },
+          "tags": {
+            "type": "",
+            "switchboard": "Functional Units"
+          }
+        }
+      ]
+    }
+}

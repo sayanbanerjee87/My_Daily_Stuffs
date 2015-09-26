@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ElectricalProject formatVersion="0.27" productRangeValuesVersion="0.16" commercialTaxonomyVersion="0.23" electricalTaxonomyVersion="0.18" mechanicalTaxonomyVersion="0.1" xmlns:ns2="http://www.schneider-electric.com/electrical-distribution/exchange-format/commercial-taxonomy" xmlns="http://www.schneider-electric.com/electrical-distribution/exchange-format" xmlns:ns4="http://www.schneider-electric.com/electrical-distribution/exchange-format/mechanical-taxonomy" xmlns:ns3="http://www.schneider-electric.com/electrical-distribution/exchange-format/electrical-taxonomy">
+    <Description/>
+    <Products>
+        <PartSet>
+            <Part id="PP0">
+                <Name>PRA10202</Name>
+                <Brand>SE</Brand>
+                <Code>PRA10202</Code>
+            </Part>
+            <Part id="PP1">
+                <Name>A9F74170</Name>
+                <Brand>SE</Brand>
+                <Code>A9F74170</Code>
+            </Part>
+        </PartSet>
+        <ProductSet>
+            <Product id="PG0">
+                <Name>PRA10202</Name>
+                <Seed Name="" Type="" GroupId="" ItemId=""/>
+                <Content>
+                    <Characteristics/>
+                </Content>
+                <SelectedPartAssembly>
+                    <Part id="PP0"/>
+                    <Position></Position>
+                    <Quantity>1</Quantity>
+                </SelectedPartAssembly>
+            </Product>
+            <Product id="PG1">
+                <Name>A9F74170</Name>
+                <Seed Name="" Type="" GroupId="" ItemId=""/>
+                <Content>
+                    <Characteristics/>
+                </Content>
+                <SelectedPartAssembly>
+                    <Part id="PP1"/>
+                    <Position></Position>
+                    <Quantity>1</Quantity>
+                </SelectedPartAssembly>
+            </Product>
+        </ProductSet>
+        <ProductList>
+            <Pack id="PK0" Descriptor="PG0">
+                <Instances>
+                    <Instance id="PI0"/>
+                </Instances>
+            </Pack>
+            <Pack id="PK1" Descriptor="PG1">
+                <Instances>
+                    <Instance id="PI1"/>
+                    <Instance id="PI2"/>
+                    <Instance id="PI3"/>
+                    <Instance id="PI4"/>
+                </Instances>
+            </Pack>
+        </ProductList>
+    </Products>
+</ElectricalProject>
