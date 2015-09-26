@@ -1,0 +1,9 @@
+.registerUserTab{
+  position: relative;
+  top: 50px;
+}
+.buttonContainer{
+  position: relative;
+  top: 40px;
+  /* left: 14%; */
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/models/userModel.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/formController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/directives/UserRegistration.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/factory/configurationModule.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/services/formDataSubmit.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/UserRegistration.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/connect_db.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sqlConnector.js" charset="UTF-8" />
+    <file url="file://C:/Webstorm_Workspace/Bom_Component_3.0/Gruntfile.js" charset="UTF-8" />
+    <file url="file://C:/Webstorm_Workspace/Bom_Component_3.0/app/scripts/directives/uiGridDirective1.js" charset="UTF-8" />
+    <file url="file://C:/Webstorm_Workspace/Bom_Component_3.0/app/views/bom1.html" charset="UTF-8" />
+  </component>
+</project>
