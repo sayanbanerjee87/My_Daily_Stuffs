@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-17 11:28-0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: com/schneider_electric/dces/pricing/service/UserServiceImpl.java:47
+msgid "Unable to retrieve user"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/service/PriceServiceImpl.java:137
+msgid "Changing the type of a price list is forbidden"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/service/PriceServiceImpl.java:189
+msgid "Price list doesn't exist"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:71
+msgid "Please provide correct XLS file"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:126
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:127
+#, java-format
+msgid "Row {0} is not valid for prices (unknown family <{1}>)"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:199
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:200
+#, java-format
+msgid "Row {0} is not valid for prices"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:232
+#, java-format
+msgid "Cell row={0}, column={1}, content=<{2}> is not a numeric cell"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:246
+#, java-format
+msgid "Row {0} is not valid for families"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/rest/PriceListResourceImpl.java:150
+#, java-format
+msgid "Price list {0} does not exist"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/rest/PriceListResourceImpl.java:339
+#, java-format
+msgid "Following data parameters are mandatory {0}"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/rest/PriceListResourceImpl.java:361
+#, java-format
+msgid "Unable to parse date {0}"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/rest/PriceListResourceImpl.java:508
+#, java-format
+msgid "No price revision exist for price list {0} at the given date {1}"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/config/HtPasswdUserAuthenticationProvider.java:47
+msgid "Unknown user"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/config/HtPasswdUserAuthenticationProvider.java:58
+#, java-format
+msgid "Authentication failed for user {0}"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/config/HtPasswdUserAuthenticationProvider.java:60
+#, java-format
+msgid "Unknown user {0}"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:50
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:68
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:88
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:106
+msgid "Please provide the price list"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:86
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:134
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:191
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:224
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:270
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:312
+msgid "User federatedId should be given"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:92
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:159
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:259
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:274
+msgid "User has no access to the given price list"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:124
+msgid "Please provide reference Ids to load"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:142
+msgid "User has no access to the given revision"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:228
+msgid "Price list ID should be given to save public lists"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:321
+msgid "User has no access to price list"
+msgstr ""
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:326
+msgid "Cannot delete an already started price revision"
+msgstr ""

@@ -1,0 +1,148 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2015 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FDU3285 <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PRICING V2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-15 13:54+0100\n"
+"PO-Revision-Date: 2015-01-15 14:24+0100\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: com/schneider_electric/dces/pricing/config/HtPasswdUserAuthenticationProvider.java:47
+msgid "Unknown user"
+msgstr "Usuario desconocido"
+
+#: com/schneider_electric/dces/pricing/config/HtPasswdUserAuthenticationProvider.java:58
+#, java-format
+msgid "Authentication failed for user {0}"
+msgstr "Error en la autenticación de usuario {0}"
+
+#: com/schneider_electric/dces/pricing/config/HtPasswdUserAuthenticationProvider.java:60
+#, java-format
+msgid "Unknown user {0}"
+msgstr "Usuario desconocido {0}"
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:52
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:70
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:89
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:106
+msgid "Please provide the price list"
+msgstr "Cargar la lista de precios"
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:71
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:90
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:124
+#: com/schneider_electric/dces/pricing/rest/PriceResourceImpl.java:60
+msgid "Please provide reference Ids to load"
+msgstr "Facilitar identificador de referencia para cargar"
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:87
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:134
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:187
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:217
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:300
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:329
+msgid "User federatedId should be given"
+msgstr "Indicar usuario federatedId"
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:94
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:159
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:281
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:304
+msgid "User has no access to the given price list"
+msgstr "Usuario sin acceso a la lista de precios dada"
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:142
+msgid "User has no access to the given revision"
+msgstr "Usuario sin acceso a la revisión dada"
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:221
+msgid "Price list ID should be given to save public lists"
+msgstr "Lista de precios ID para guardar lista pública"
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:250
+#, java-format
+msgid "A price list already exist for given name <{0}>"
+msgstr "Ya existe una lista de precios, con el mismo nombre <{0}>"
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:263
+#, java-format
+msgid "A public price list already exist for given name <{0}>"
+msgstr "Ya existe una lista de precios pública, con el mismo nombre <{0}>"
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:286
+msgid "Cannot delete a price list with revision"
+msgstr "No es posible suprimir la lista de precios con una revisión"
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:338
+msgid "User has no access to price list"
+msgstr "Usuario sin acceso a la lista de precios"
+
+#: com/schneider_electric/dces/pricing/dao/PriceDaoImpl.java:343
+msgid "Cannot delete an already started price revision"
+msgstr "No puede eliminarse una revisión de precios ya iniciada"
+
+#: com/schneider_electric/dces/pricing/rest/PriceListResourceImpl.java:126
+#, java-format
+msgid "Price list {0} does not exist"
+msgstr "Lista de precios {0} no existe"
+
+#: com/schneider_electric/dces/pricing/rest/PriceListResourceImpl.java:303
+#, java-format
+msgid "Following data parameters are mandatory {0}"
+msgstr "Los siguientes datos son obligatorios {0}"
+
+#: com/schneider_electric/dces/pricing/rest/PriceListResourceImpl.java:325
+#, java-format
+msgid "Unable to parse date {0}"
+msgstr "No se ha podido establecer la fecha {0}"
+
+#: com/schneider_electric/dces/pricing/rest/PriceListResourceImpl.java:470
+#, java-format
+msgid "No price revision exist for price list {0} at the given date {1}"
+msgstr "Sin revisión de precios en la lista {0} para la fecha indicada {1}"
+
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:59
+msgid "Please provide correct XLS file"
+msgstr "Proporcionar el archivo Excel correcto"
+
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:110
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:111
+#, java-format
+msgid "Row {0} is not valid for prices (unknown family <{1}>)"
+msgstr "La fila {0} no es válida para precios (familia desconocida <{1}>)"
+
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:183
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:184
+#, java-format
+msgid "Row {0} is not valid for prices"
+msgstr "Fila {0} no es válida para los precios"
+
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:213
+#, java-format
+msgid "Cell row={0}, column={1}, content=<{2}> is not a numeric cell"
+msgstr "Fila celda={0}, columna={1}, contiene=<{2}> no es una celda numérica"
+
+#: com/schneider_electric/dces/pricing/service/ExcelParserImpl.java:227
+#, java-format
+msgid "Row {0} is not valid for families"
+msgstr "Fila {0} no es válida para familias"
+
+#: com/schneider_electric/dces/pricing/service/PriceServiceImpl.java:139
+msgid "Changing the type of a price list is forbidden"
+msgstr "No se permite cambiar el tipo de la lista de precios"
+
+#: com/schneider_electric/dces/pricing/service/PriceServiceImpl.java:191
+msgid "Price list doesn't exist"
+msgstr "La lista de precios no existe"
+
+#: com/schneider_electric/dces/pricing/service/UserServiceImpl.java:47
+msgid "Unable to retrieve user"
+msgstr "No puede recuperarse el usuario"
